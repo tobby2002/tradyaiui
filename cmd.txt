@@ -1,0 +1,12 @@
+# https://quasar.dev/quasar-cli/installation
+# Uninstall quasar-cli if you have it from <1.0 versions
+$ npm uninstall -g quasar-cli
+# Node.js >= 8.9.0 is required.
+$ npm install -g @quasar/cli
+
+
+Alternatively, you can even use npx to run quasar commands without the need of a globally installed @quasar/cli.
+
+$ npx quasar dev
+
+

@@ -1,0 +1,3 @@
+export default {
+  connected: true // assume, we are connected after launch...
+}
