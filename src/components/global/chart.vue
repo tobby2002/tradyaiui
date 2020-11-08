@@ -549,7 +549,7 @@
         switch (options.xAxis.length) {
           case 2:
             this.dynStyle = 'twoAxis';
-            this.dynHeight = 500;
+            this.dynHeight = 700;
             break;
           case 3:
             this.dynStyle = 'threeAxis';
@@ -557,7 +557,7 @@
             break;
           default:
             this.dynStyle = 'oneAxis';
-            this.dynHeight = 300;
+            this.dynHeight = 500;
             break;
         }
 
@@ -568,20 +568,20 @@
         if (axisLength > 1) {
           // Define a Grid!
           let preGrid = [{
-            left: 20,
-            right: 20,
+            left: 50,
+            right: 30,
             top: 110,
-            height: 220
+            height: 420
           }, {
-            left: 20,
-            right: 20,
+            left: 50,
+            right: 30,
             height: 80,
-            top: 360
+            top: 560
           }, {
-            left: 20,
-            right: 20,
+            left: 50,
+            right: 30,
             height: 40,
-            top: 470
+            top: 670
           }];
 
           options.grid = [];

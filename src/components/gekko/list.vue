@@ -4,7 +4,7 @@
       <div class="text-h4 q-mb-md">Trade</div>
       <div class="text-subtitle">Run your strategy against a live market!</div>
     </div>
-    <div class="row justify-center q-pa-md">
+    <div class="row justify-end q-pa-md">
       <!--      <div class="text-h4 q-mb-sm">Start a new live Gekko</div>-->
       <q-btn outline color="teal" @click.prevent="$router.push('/live-gekkos/new')">Start Trade</q-btn>
       <p></p>

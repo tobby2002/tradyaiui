@@ -2,7 +2,7 @@
   <q-page padding>
     <div class="text-h4 q-mb-md">Import data</div>
     <div class="subheading">The importer can download historical market data directly from the exchange.</div>
-    <div class="row justify-center q-pa-md">
+    <div class="row justify-end q-pa-md">
       <q-btn outline  color="teal" label="Start Import" @click.prevent="run"/>
     </div>
     <div>
@@ -29,10 +29,10 @@
             <q-card
               v-for="_import in imports"
               :key="_import.id"
-              class="col-lg-1 col-md-12 text-center q-mr-md q-mt-sm"
+              class="col-lg-1 col-md-8 text-center q-mr-md q-mt-sm"
             >
-              <q-card-section class="bg-teal-2">
-                <div class="text-h6 text-uppercase">
+              <q-card-section class="bg-teal-3">
+                <div class="text-h7 text-uppercase">
                   {{ _import.watch.currency }}-{{ _import.watch.asset }}
                 </div>
                 <div class="text-subtitle-2">
@@ -45,13 +45,13 @@
                   :class="{'text-teal': !_import.done, 'text-positive': _import.done}"
                   :min="0"
                   :max="100"
-                  :thickness="0.2"
-                  size="102px"
+                  :thickness="0.1"
+                  size="60px"
                   class="q-ma-md"
                   show-value
                   :value="+progress(_import)">
-                  <q-icon size="64px" v-if="_import.done" color="positive" name="done"></q-icon>
-                  <span v-if="!_import.done" class="text-h6">{{+progress(_import)}} %</span>
+                  <q-icon size="32px" v-if="_import.done" color="positive" name="done"></q-icon>
+                  <span v-if="!_import.done" class="text-h8">{{+progress(_import)}}%</span>
                 </q-circular-progress>
               </q-card-section>
               <q-separator></q-separator>

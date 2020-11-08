@@ -2,7 +2,7 @@
   <div>
     <div class="text-h4 q-mb-md">Configuration</div>
     <p>Configure API Keys and other stuff here.</p>
-    <div v-if="!addApiToggle" @click.prevent="openAddApi" class="row justify-center q-pa-sm">
+    <div v-if="!addApiToggle" @click.prevent="openAddApi" class="row justify-end q-pa-sm">
 <!--      <q-btn outline  color="teal" icon="add_circle_outline" label="Add API key"/>-->
       <q-btn outline  color="teal" label="Add API key"/>
     </div>

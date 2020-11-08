@@ -66,7 +66,7 @@
 
       <q-tabs
         v-model="currentTab"
-        class="bg-blue-grey-8 text-blue-grey-1"
+        class="bg-teal text-dark"
         active-color="blue-grey-1"
         indicator-color="blue-grey-1"
       >

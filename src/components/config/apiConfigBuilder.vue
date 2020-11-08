@@ -20,7 +20,7 @@
             v-model='credentials[cred]'
             :label="cred"
           />
-          <q-btn outline  class="q-mt-md" color="primary" label="Add API Key" @click.prevent="upload" :disable="!fieldsValid"/>
+          <q-btn outline  class="q-mt-md" color="teal" label="Add" @click.prevent="upload" :disable="!fieldsValid"/>
         </div>
       </div>
       <div class="row">

@@ -5,7 +5,7 @@
     </div>
     <div class="row q-col-gutter-md">
       <div class="col">
-        <q-btn outline @click.prevent="switchToggle" color="primary" icon="perm_data_settings">set paper trade</q-btn>
+        <q-btn outline @click.prevent="switchToggle" color="blue-grey" icon="perm_data_settings">set paper trade</q-btn>
       </div>
       <div class="col">
         <q-input
